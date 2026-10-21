@@ -14,4 +14,36 @@ date1 = datetime.date.today()
 date2 = datetime.datetime.today()
 #print(date2)
 #print(date2.month)
-#print(date2.days)
+#print(date2.day)
+#print(date2.hour)
+#print(date2.minute)
+#print(date2.second)
+#print(date2.microsecond)
+
+date3 = datetime.timedelta(days=4)
+date4 = datetime.timedelta(days=4, seconds=0, microseconds=0,\
+                           milliseconds=0, minutes=3, hours=1,\
+                           weeks=2)
+print(date3)
+print(date4)
+print(date2 + date3)
+print(3 * date3)
+print(date3 / 2)
+print(date4 % date3)
+print(abs(date3 - date4))
+print(date3.total_seconds())
+
+date5 = date1 + date3
+date6 = date1 + date4
+
+print(date5)
+print(date6)
+print(date5 > date6)
+
+print(date.today().strftime("%d/%m/%y"))
+print(date.today().strftime("%A %d %B %Y"))
+arawNgDavao = date.fromordinal(730920)
+print(arawNgDavao)
+print('The {1} is {0:%d}, the {2} is {0:%B}.'.format(arawNgDavao, "day", "month"))
+
+
