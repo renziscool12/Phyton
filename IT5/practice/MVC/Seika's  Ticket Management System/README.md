@@ -1,1 +1,1 @@
-![seika goatk](./asdsaasdsasca.jpg)
+![seika_goat](./seika.jpg)
