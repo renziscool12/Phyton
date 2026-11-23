@@ -19,7 +19,7 @@ class BookController:
         return {"message":"Book added successfully", "book_id": book_id}
 
     def update_book(self, book_id, title,author,description):
-        result = self.book_model.update_book(book_id, title, author, description)
+        result = self.book_model.update_book( title, author, description, book_id)
         return result
 
     def delete_book(self, book_id):
