@@ -15,7 +15,7 @@ class BookModel:
         connection = get_connection()
         try:
             with connection.cursor() as cursor:
-                sql = "SELECT * FROM books WHERE id = %s"
+                sql = "SELECT * FROM books WHERE book_id = %s"
                 cursor.execute(sql, (book_id,))
                 return cursor.fetchone()
         finally:
